@@ -1,0 +1,36 @@
+{
+  "name": "spring-boot-template-test",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Dongjun-Kim/spring-boot-template-test.git",
+  "authors": [
+    "Dongjun-Kim <kdj8036@sk.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "private",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.20",
+    "bootstrap": "~3.2.0",
+    "angular-bootstrap": "~0.11.0",
+    "angular-ui-router": "~0.2.10",
+    "angular-resource": "~1.2.20",
+    "angular-ui-sortable": "https://github.com/angular-ui/ui-sortable.git#~0.12.8",
+    "async": "~0.9.0",
+    "ng-file-upload": "~1.6.5",
+    "angular-animate": "~1.2.23",
+    "font-awesome": "~4.2.0",
+    "bootstrap-calendar": "~0.2.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.20"
+  }
+}
