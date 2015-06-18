@@ -1,0 +1,12 @@
+@media screen and(min-width:992px){
+    .dropdown-menu{
+        left:auto;
+        right:0;
+    }
+}
+@media screen and (max-width: 993px){
+    .dropdown-menu{
+        left: 0 !important;
+        right: 0;
+    }
+}

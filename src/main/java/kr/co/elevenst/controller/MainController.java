@@ -7,11 +7,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
+	
 	@RequestMapping("/")
 	public ModelAndView index(
 			@RequestParam(value = "name", defaultValue = "World") String name) {
 		
-		System.out.println("adsfasdfa");
 		ModelAndView mav = new ModelAndView("index");
 		mav.addObject("test", "djkim");
 		mav.addObject("test2", "11번가");

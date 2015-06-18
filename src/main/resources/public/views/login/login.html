@@ -1,0 +1,32 @@
+<!-- 전체레이아웃 : str -->
+<section data-ng-controller="LoginController" data-ng-init="init()">
+    <section class="row">
+        <!-- content : str -->
+        <div class="login col-lg-6 col-lg-offset-3 col-xs-12">
+            <section class="panel panel-11st">
+                <div class="panel-heading panel-title">로그인</div>
+                <div class="panel-body">
+                    <form method="post" action="/login/login.json">
+                        <section class="row">
+                            <section class="form-group col-sm-6 col-xs-12">
+                                <label for="email">이메일</label>
+                                <input type="text" class="form-control" id="email" name="email"
+                                       data-ng-model="email" data-ng-keydown="loginByEnterKey($event.keyCode)"/>
+                            </section>
+                            <section class="form-group col-sm-6 col-xs-12">
+                                <label for="password">비밀번호</label>
+                                <input type="password" class="form-control" id="password" name="password"
+                                       data-ng-model="password" data-ng-keydown="loginByEnterKey($event.keyCode)"/>
+                            </section>
+                        </section>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <div class="control-inner-buttons">
+                        <button id="login-button" type="button" class="btn btn-primary" data-ng-click="login()">로그인</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</section>

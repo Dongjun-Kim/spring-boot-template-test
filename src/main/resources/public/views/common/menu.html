@@ -1,0 +1,49 @@
+<header class="11st-menu" data-ng-controller="MenuController">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                11st 대시보드
+            </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <a data-ui-sref="user password change"><i class="fa fa-key fa-fw"></i> 비밀번호 변경</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <nav class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a id="menu-my-page"><i class="fa fa-user fa-fw"></i> My Page<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li data-ui-sref-active="menu-active">
+                                <a id="menu-my-profile" data-ui-sref="my profile"><i class="fa fa-fw fa-list-alt"></i> 나의 정보</a>
+                            </li>
+                            <li data-ui-sref-active="menu-active">
+                                <a id="menu-password-change" data-ui-sref="user password change"><i class="fa fa-fw fa-key"></i> 비밀번호 변경</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+</header>

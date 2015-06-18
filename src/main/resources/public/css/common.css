@@ -1,0 +1,285 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body{
+    font-family: 'nanumgothic', 'sans-serif';
+}
+.cursor-pointer:hover{
+    cursor: pointer;
+}
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.panel-body.scrollable{
+    overflow:auto;
+}
+/* tab */
+.tab-pane{
+    padding:10px 10px 10px 10px;
+    border-left:1px solid #dddddd;
+    border-right:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.11st-tabset{
+    margin-bottom:20px;
+}
+
+.page-wrapper > section{
+    padding: 20px 0 0 20px;
+}
+
+.table tr.linkable:hover{
+    background-color:#eeeeee;
+}
+
+.table tr.linkable{
+    cursor: pointer;
+}
+.table tr.selected{
+    background: #428bca !important;
+}
+
+.no-margin{
+    margin:0 0 0 0 !important;
+}
+.no-padding{
+    padding: 0 0 0 0;
+}
+
+/* bootstrap override */
+/*
+.navbar-default{
+    background-color:#cccccc;
+}
+.nav a{
+    background-color:#cccccc;
+    color:black;
+}
+.nav a:hover{
+    background-color:#ffdddd !important;
+    color:white;
+}
+
+
+.nav-tabs>li>a{
+    background-color:#eeeeee !important;
+    border:1px solid #eeeeee;
+    color:black !important;
+}
+.nav-tabs>li.active>a{
+    background-color:#ff534f !important;
+}
+.navbar-brand{
+    color:white !important;
+}
+.navbar-top-links{
+    color:black !important;
+    */
+/*border: 1px solid #ff534f !important;*//*
+
+}
+*/
+
+.nav a{
+    color:#666666;
+}
+
+input[readonly="readonly"]{
+    background-color:#dddddd;
+}
+label.input-label{
+    cursor:pointer;
+}
+
+.tr-selected{
+    background-color:#cccccc;
+}
+
+.panel input{
+    color:black;
+}
+.profile-photo-file{
+    display: none !important;
+}
+
+/* control buttons */
+.control-buttons{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+.control-buttons button, .control-inner-buttons button{
+    width:100px;
+    height:50px;
+}
+
+.control-inner-buttons{
+    margin-right:20px;
+    text-align: right;
+}
+
+/* profile card */
+.profile .profile-image{
+    width:100%;
+    height:100%;
+    max-width: 200px;
+    max-height:200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border:1px solid #31708f;
+}
+
+/* tree */
+.jstree{
+    overflow:auto;
+}
+
+/* custom panel */
+.panel-11st {
+    border:1px solid #cccccc;
+}
+.panel-11st > .panel-heading {
+    color: white;
+    background-color: #696969;
+    border-color: #eeeeee;
+}
+.panel-11st > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #eeeeee;
+}
+.panel-11st > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #428bca;
+}
+
+
+/* animation */
+@-webkit-keyframes blink {
+    100% { background: rgba(100,255,100,0.3); }
+}
+.blink {
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-timing-function: linear;
+}
+
+
+.badge-success{
+    background-color: #5cb85c;
+}
+.badge-info{
+    background-color: #5bc0de;
+}
+
+.no-decorate-button{
+    padding: 0 0 0 0;
+    border:none;
+    background:none;
+}
+
+.panel-title{
+    height:50px;
+}
+.panel-heading span{
+    font-size:18px;
+}
+
+
+/* blink animation */
+/*
+  We're using CSS transitions for when
+  the enter and move events are triggered
+  for the element that has the .repeated-item
+  class
+*/
+.repeated-item.ng-enter, .repeated-item.ng-move {
+    -webkit-transition:0.2s linear all;
+    -moz-transition:0.2s linear all;
+    -o-transition:0.2s linear all;
+    transition:0.2s linear all;
+    opacity:0;
+}
+
+/*
+ The ng-enter-active and ng-move-active
+ are where the transition destination properties
+ are set so that the animation knows what to
+ animate.
+*/
+.repeated-item.ng-enter.ng-enter-active,
+.repeated-item.ng-move.ng-move-active {
+    opacity:1;
+}
+
+/*
+  We're using CSS keyframe animations for when
+  the leave event is triggered for the element
+  that has the .repeated-item class
+*/
+.repeated-item.ng-leave {
+    -webkit-animation:0.1s fade-out-animation;
+    -moz-animation:0.1s fade-out-animation;
+    -o-animation:0.1s fade-out-animation;
+    animation:0.1s fade-out-animation;
+}
+
+@keyframes fade-out-animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+/*
+  Unfortunately each browser vendor requires
+  its own definition of keyframe animation code...
+*/
+@-webkit-keyframes fade-out-animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+@-moz-keyframes fade-out-animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+@-o-keyframes fade-out-animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+.reveal-animation{
+    -webkit-animation: enter_sequence 1s linear; /* Safari/Chrome */
+    animation: enter_sequence 1s linear; /* IE10+ and Future Browsers */
+}
+@-webkit-keyframes enter_sequence {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+@keyframes enter_sequence {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+@media (max-width: 768px) {
+    .panel-body{
+        min-height:200px;
+    }
+}
+
+
+/* radar chart override */
+.radar-chart .axis .legend {
+    font-family: 'nanumgothic' !important;
+    font-size: 20px !important;
+}
+.radar-chart .tooltip {
+    font-size: 25px;
+}
+
+
+.default-checkbox{
+	opacity:1 !important;	
+	position:static !important;
+}

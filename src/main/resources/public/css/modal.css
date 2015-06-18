@@ -1,0 +1,113 @@
+/* modal */
+.11st-modal-wrapper{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index: 1500;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4);
+}
+.11st-directive-modal-wrapper{
+    display:block;
+}
+@media screen and (min-width: 768px) {
+    .11st-modal-content{
+        position:fixed;
+        top:50%;
+        left:50%;
+    }
+    .11st-modal{
+        width:400px;
+        height:500px;
+        margin-left:-200px;
+        margin-top:-250px;
+        z-index:15;
+    }
+    .11st-modal .panel{
+        height:100%;
+    }
+    .11st-modal-scrolling{
+        overflow-y:scroll;
+        height:340px;
+        margin-top:10px;
+    }
+    .11st-modal-buttons{
+        margin: 0 20px 10px;
+    }
+    .11st-modal-select-count{
+        margin-left:15px;
+    }
+}
+@media screen and (max-width: 767px){
+    .11st-modal-wrapper{
+        position:absolute;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+    }
+    .11st-modal-content{
+        top:100px;
+        left:0;
+    }
+    .11st-modal{
+        width:100%;
+        height:100%;
+        z-index:15;
+    }
+    .11st-modal-scrolling{
+        overflow-y:scroll;
+        height:100%;
+        margin-top:10px;
+    }
+    .11st-modal-buttons{
+        margin: 0 20px 10px;
+    }
+    .11st-modal-select-count{
+        margin-left:15px;
+    }
+}
+
+
+/* loading modal */
+.loading{
+    margin-left:-27px;
+    margin-top:-27px;
+}
+
+.notifier .panel-body{
+    height: 100%;
+    position:relative;
+}
+.notifier .panel-footer{
+    width:100%;
+    bottom:0;
+}
+/* notifier */
+@media screen and (min-width: 768px) {
+    .notifier{
+        width:300px;
+        margin-left:-150px;
+    }
+}
+@media screen and (max-width: 767px){
+    .notifier{
+        width:100%;
+        height:100%;
+    }
+}
+.notifier-buttons button{
+    height:50px
+}
+.nofifier-confirm-buttons{
+    text-align: center;
+}
+.notifier-confirm-buttons button{
+    width:130px;
+}
+.notifier-close-button{
+    width:100%;
+}
